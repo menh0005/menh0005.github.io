@@ -14,7 +14,7 @@ nav ul{
 nav ul a,
 nav ul a:link,
 nav ul a:visited{
-    text-decoration: none ;
+    text-decoration: none;
     background-color: whitesmoke;
     border: 0.5px solid rgb(50, 40, 113);
     box-shadow: -1px 0px 1px 1px  rgb(50, 40, 113);
