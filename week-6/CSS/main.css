@@ -1,6 +1,12 @@
+
+html{
+    font-size: 16px;
+}
+
 body{
     color: darkslategray;
     font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/white_brick_wall.png") ;
 }
 h1{
     color: white;
@@ -17,6 +23,7 @@ nav ul{
 nav ul a{
     color: darkslategray;
     text-decoration: none;
+    font-size: 1.5rem;
 }
 .orange-link{
     background-color: darkslategray;
@@ -24,7 +31,16 @@ nav ul a{
     text-decoration: none;
 }
 #treatofweek{
-    background-color: orange;
+    background:darkslategray url("../images/bread.jpg") 
+    no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1em;
+    width:50%;
+}
+#treatofweek dl ul li:nth-child(n){
+    background-color: transparent;
 }
 .large-text{
     font-size: 20px;
@@ -78,5 +94,5 @@ footer{
     padding: 20px;
 }
 body footer{
-    background-color: rgb(0,0,0);
+    background-color: rgba(0, 0, 0, 0.064);
 }
