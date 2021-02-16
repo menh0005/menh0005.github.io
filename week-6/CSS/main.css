@@ -1,0 +1,82 @@
+body{
+    color: darkslategray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: white;
+}
+p{
+    background-color: lightblue;
+}
+h1,h2,h3,h4{
+    text-decoration: underline;
+}
+nav ul{
+    list-style: none;
+}
+nav ul a{
+    color: darkslategray;
+    text-decoration: none;
+}
+.orange-link{
+    background-color: darkslategray;
+    color: orange;
+    text-decoration: none;
+}
+#treatofweek{
+    background-color: orange;
+}
+.large-text{
+    font-size: 20px;
+}
+article>p{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: justify;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-style: italic;
+}
+h3+ul{
+    border: 1px solid black;
+}
+a[href="#treatofweek"] {
+    font-weight: bold;
+}
+[title*="Executive"]{
+background-color: yellow;
+}
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    background-color: orange important;
+    box-shadow: -2px 2px 4px 2px black;
+}
+nav ul a:hover,
+nav ul a:focus{
+    text-decoration: underline;
+}
+nav ul a:active{
+    box-shadow: 0 0 4px 2px black;
+}
+aside ul li:first-child{
+    font-weight: bold;
+}
+section ol li:last-child{
+    font-weight:bold;  
+}
+dl ul li:nth-child(3){
+    
+}
+dl ul li:nth-child(2n+1){
+    background-color: white;
+}
+footer{
+    background-color: #d5836c;
+    padding: 20px;
+}
+body footer{
+    background-color: rgb(0,0,0);
+}
