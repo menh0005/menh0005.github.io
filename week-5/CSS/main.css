@@ -44,7 +44,7 @@ background-color: yellow;
 nav ul a,
 nav ul a:link,
 nav ul a:visited{
-    background-color: orange;
+    background-color: orange important;
     box-shadow: -2px 2px 4px 2px black;
 }
 nav ul a:hover,
@@ -62,4 +62,14 @@ section ol li:last-child{
 }
 dl ul li:nth-child(3){
     
+}
+dl ul li:nth-child(2n+1){
+    background-color: white;
+}
+footer{
+    background-color: #d5836c;
+    padding: 20px;
+}
+body footer{
+    background-color: rgb(0,0,0);
 }
