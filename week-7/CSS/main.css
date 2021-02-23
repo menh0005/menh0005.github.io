@@ -7,6 +7,11 @@ body{
     color: darkslategray;
     font-family: Arial, Helvetica, sans-serif;
     background-image: url("../images/white_brick_wall.png") ;
+    padding-top:90px;
+}
+
+img{
+    width:100%;
 }
 h1{
     color: white;
@@ -20,23 +25,69 @@ h1,h2,h3,h4{
 nav ul{
     list-style: none;
 }
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background-color: rgba(0, 0, 0, 0.606);
+    z-index:999;
+}
+nav ul li{
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+}
 nav ul a{
+    display: block;
     color: darkslategray;
     text-decoration: none;
     font-size: 1.5rem;
 }
 .orange-link{
+    padding: 1.5em;
+    display:inline-block;
+    width:300px;
     background-color: darkslategray;
     color: orange;
     text-decoration: none;
+    clear:both;
 }
+
+article,
+aside{
+    width:80%;
+    background-color: rgba(255,255,255,0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    box-sizing: border-box;
+    float: left;
+}
+aside{
+    width:20%;
+}
+section{
+    clear:both;
+}
+.clearfix{
+    clear:both;
+}
+
+.orange-link.large-text{
+    position:absolute;
+    right: 0;
+    bottom: 0;
+}
+
 #treatofweek{
+    position:relative;
     background:darkslategray url("../images/bread.jpg") 
     no-repeat center center;
     background-size: cover;
     color: #fff;
     font-size: 1.5rem;
-    padding: 1em;
+    padding: 1em 1em 3em 1em;
     width:50%;
 }
 #treatofweek dl ul li:nth-child(n){
@@ -63,12 +114,12 @@ a[href="#treatofweek"] {
 }
 [title*="Executive"]{
 background-color: yellow;
-background-
 }
+
 nav ul a,
 nav ul a:link,
 nav ul a:visited{
-    background-color: orange important;
+    background-color: orange;
     box-shadow: -2px 2px 4px 2px black;
 }
 nav ul a:hover,
