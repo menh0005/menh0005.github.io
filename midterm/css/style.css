@@ -1,17 +1,51 @@
 html{
-    font-size: 16px;
-    font-weight:lighter;
-    background-color: #aad4cf;
-
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-body{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;  
+header{
+    background-image: url(../images/lone-starfish-wide.jpg);
 }
 h1{
     color: white;
+    font-size: 3em;
+    
 }
-.large-text{
+nav ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+    margin: auto;
+}
+nav ul li{
+    display: inline-block;
+    width: 30%;
+    box-sizing: border-box;
+}
+.container{
+    background-color: #d2eae7cb;
+    width:80%;
+    margin:0 auto;
+    bottom:10%;
+    z-index: 1;
+}
+body{
+    color: black;
+    background-color: #aad4cf;
+    z-index: 2;
+}
+main{
     font-size: 20px;
+    line-height: 1.5;
 }
+.closeup{
+    width: 30%;
+    float: left;
+}
+h3{
+    clear: both;
+}
+
+
