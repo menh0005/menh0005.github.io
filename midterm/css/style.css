@@ -2,12 +2,21 @@ html{
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
-header{
-    background-image: url(../images/lone-starfish-wide.jpg);
-}
 h1{
     color: white;
-    font-size: 3em;  
+    background-image: url("../images/lone-starfish-wide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding: 9%;
+    text-align: center;
+    margin:0 auto;
+    font-weight: 400;
+
+}
+.large-text{
+    font-size: 5rem;
+    padding-top: 19%;
 }
 nav ul{
     list-style: none;
@@ -15,13 +24,16 @@ nav ul{
 a{
     text-decoration: none;
     color: black;
-    font-size: 1.5em;
+    font-size: 2rem;
     margin: auto;
 }
 nav ul li{
     display: inline-block;
     width: 30%;
+    padding: 0.5em;
+    border: 10%;
     box-sizing: border-box;
+    text-align: center;
 }
 .container{
     background-color: #d2eae7cb;
@@ -29,6 +41,7 @@ nav ul li{
     margin:0 auto;
     bottom:10%;
     z-index: 1;
+    
 }
 body{
     color: black;
@@ -36,15 +49,31 @@ body{
     z-index: 2;
 }
 main{
-    font-size: 20px;
+    padding: 1%;
+}
+img{
+    width: 20%;
+    float: left;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+p{
+    font-size:1.3em ;
     line-height: 1.5;
 }
-.closeup{
-    width: 30%;
-    float: left;
+h2{
+    font-size: 2.2rem;
+    word-spacing: 3px;
+    font-weight: 400;
 }
 h3{
     clear: both;
+    font-size: 1.5rem;
+    word-spacing: 3px;
+    font-weight: 400;
 }
+
+
+
 
 
