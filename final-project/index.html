@@ -8,15 +8,19 @@
     <title>Three Star Media</title>
 <!-- Adding font awesome link for website icons -->
     <script src="https://kit.fontawesome.com/b0206e6a77.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body class="container">
  <!-- Adding a class to the header holding the site nav and hero -->
     <header class="site-head">
         <div class="site-nav">
-        <img src="./img/logo.png" alt="site logo">
-        <nav>
+            <div class="img">
+        <img src="./img/logo.png" alt="site logo" class="logo">
+            </div>
+        <nav class="nav-list">
             <ul>
-                <li><a href="#">Home</a></li>
+                <li><a href="#" class="home">Home</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Team</a></li>
@@ -30,11 +34,10 @@
         </div>
 <!-- Adding a hero div & a div for the hero text  -->
         <div class="hero-image">
-            <img src="./img/main-banner.jpg" alt="banner">
             <div class="hero-text">
-            <h1>Welcome to Three Start Media </h1>
+            <h1>Welcome to Three Star Media </h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus provident impedit quos recusandae non, in cumque reiciendis facere molestiae,
-            vel harum! Tenetur ut totam voluptatem quidem!</p>
+            vel harum! Tenetur ut totam voluptatem quidem!Lorem ipsum, dolor sit amet consectetur adipisicing elit.Tenetur ut totam voluptatem quidem!</p>
 <!-- Adding a div class to all buttons of the site -->
             <div class="button1">
             <a href="#" class="btn1" target="_blank">Connect with us</a>
@@ -50,7 +53,7 @@
             <h2>About Us</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ullam, qui quasi, maxime exercitationem quas quae adipisci dicta esse, 
             consequatur veniam numquam architecto eos sit excepturi pariatur. Voluptates, dolorum aspernatur! </p>
-            <p>
+            <p class="p2">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut ullam, qui quasi, maxime exercitationem quas quae adipisci dicta esse, 
             consequatur veniam numquam architecto eos sit excepturi pariatur. veniam deserunt nobis est recusandae laboriosam optio temporibus unde nemo id facilis odio fugiat?
             </p>
@@ -73,8 +76,8 @@
                 <h3>Marketing</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nemo sequi totam rem sit iste labore laboriosam! Eveniet, eius. Iste unde cumque omnis error aperiam illum accusamus dolorem assumenda recusandae.Minima nihil porro tempore consequatur vel!
                 </p>
-                <div class="button2">
-                <a href="#" class="btn2" target="_blank">Marketing Plans</a>
+                <div class="button3">
+                <a href="#" class="btn3" target="_blank">Marketing Plans</a>
                 <i class="fas fa-caret-right"></i>
                 </div>
             </div>
@@ -83,8 +86,8 @@
                 <h3>Video Production</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nemo sequi totam rem sit iste labore laboriosam! Eveniet, eius. Iste unde cumque omnis error aperiam illum accusamus dolorem assumenda recusandae.Minima nihil porro tempore consequatur vel!
                 </p>
-                <div class="button3">
-                <a href="#" class="btn3">Video Plans</a>
+                <div class="button4">
+                <a href="#" class="btn4">Video Plans</a>
                 <i class="fas fa-caret-right"></i>
                 </div>
             </div>
@@ -93,8 +96,8 @@
                 <h3>Web Development</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nemo sequi totam rem sit iste labore laboriosam! Eveniet, eius. Iste unde cumque omnis error aperiam illum accusamus dolorem assumenda recusandae.Minima nihil porro tempore consequatur vel!
                 </p>
-                <div class="button3">
-                <a href="#" class="btn3" target="_blank">Web Plans</a>
+                <div class="button5">
+                <a href="#" class="btn5" target="_blank">Web Plans</a>
                 <i class="fas fa-caret-right"></i>
                 </div>
             </div>
@@ -103,48 +106,51 @@
                 <h3>Print</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nemo sequi totam rem sit iste labore laboriosam! Eveniet, eius. Iste unde cumque omnis error aperiam illum accusamus dolorem assumenda recusandae.Minima nihil porro tempore consequatur vel!
                 </p>
-                <a href="#" class="btn3" target="_blank">Print Plans</a>
+                <div class="button6">
+                <a href="#" class="btn6" target="_blank">Print Plans</a>
                 <i class="fas fa-caret-right"></i>
+                </div>
             </div>
         </section>
 <!-- Adding vision section -->
         <section class="section3">
-            <img src="./img/vision.jpg" alt="our vision">
-            <div>
+            <div class="vision">
             <h2>Our Vision</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error unde quibusdam cumque itaque doloremque dicta iure fugiat labore animi maxime sapiente, dolore officiis aliquid velit repudiandae atque repellendus libero facere?
             Veritatis,ratione aliquid. Ad, molestiae!</p>
-            <a href="#" class="btn4" target="_blank">Learn more</a>
+            <div class="button7">
+            <a href="#" class="btn7" target="_blank">Learn more</a>
             <i class="fas fa-caret-right"></i>
+            </div>
             </div>
         </section>
 <!-- Adding team section -->
         <section class="section4">
             <h2>Our Team</h2>
-            <div class="john-img">
+            <div class="ceo">
                 <img src="./img/john.jpg" alt="CEO">
-            </div>
             <div class="john">
                 <h3>John Doe</h3>
                 <b>CEO and Co-owner</b>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, adipisci! Similique ducimus amet sapiente facilis dolorem quos perspiciatis repudiandae consectetur delectus natus quidem eum enim cupiditate atque dignissimos, ratione quae.
                     Consequuntur quam magnam culpa suscipit, quibusdam commodi eos nulla hic, sunt laborum error dolores, possimus sed ex facilis!</p>
             </div>
-            <div class="bob-img">
-                <img src="./img/bob.jpg" alt="CFO">
             </div>
+            <div class="cfo">
+                <img src="./img/bob.jpg" alt="CFO">
             <div class="bob">
                 <h3>Bob Rite</h3>
                 <b>CFO and Co-owner</b>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, adipisci! Similique ducimus amet sapiente facilis dolorem quos perspiciatis repudiandae consectetur delectus natus quidem eum enim cupiditate atque dignissimos, ratione quae.
                 Consequuntur quam magnam culpa suscipit, quibusdam commodi eos nulla hic, sunt laborum error dolores, possimus sed ex facilis!</p>
             </div>
+            </div>
         </section>
 <!-- Adding contact section -->
         <section class="section5">
             <h2>Contact Us</h2>
         <div>
-                <h3>Send us a message</h3>
+            <h3>Send us a message</h3>
                 <form action="send.message" method="get"></form>
             <div>
                 <label for="fullname">Full Name</label>
@@ -185,7 +191,7 @@
 <!-- Adding a div class to location-->
         <div class="location">
             <h2>Location</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d89599.50833557374!2d-75.74074621946498!3d45.42981106021899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salgonquin%20college!5e0!3m2!1sen!2sca!4v1617481382960!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d38596.11105884998!2d-75.69872538468692!3d45.42042386725464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1salgonquin%20college!5e0!3m2!1sen!2sca!4v1618902415013!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
         </section>
     </main>
