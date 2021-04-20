@@ -50,7 +50,7 @@ table {
 
 /* ------ Custom CSS-------- */
 
-body{
+html{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     box-sizing: border-box;
@@ -162,6 +162,7 @@ h1{
     padding:1em;
     background-color: #ffe6ac;
     height:600px;
+    width:100%;
 }
 .section1 h2{
     font-size: 40px;
@@ -322,9 +323,9 @@ padding-bottom:1em;
     padding-bottom:1em;
     }
 .web p{
-        padding:1em;
-        font-size:13px;
-        line-height: 1.5;
+    padding:1em;
+    font-size:13px;
+    line-height: 1.5;
     }
 .web{
     height:700px;
