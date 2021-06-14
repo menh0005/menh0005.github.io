@@ -1,87 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <title>Dash</title>
-    <link rel="icon" type="image/icon" href="./images/favicon.ico"/>
+    <link rel="icon" type="image/icon" href="./images/favicon.ico" />
     <script src="https://kit.fontawesome.com/b0206e6a77.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <img src="./images/logo/logo.png" alt="Dash Logo" class="logo">
     </header>
     <main>
-    <div class="content">
-        <section class="section1">
-            <h1>Want to be your own boss?</h1>
-            <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
-        </section>
-        <img src="./images/bg-image/scooter.svg" alt="scooter" class="scooter">
-        <section class="section2">
-            <h2>Apply Now</h2>
-            <p>Enter your info below to get started.</p>
-            <form action="drive.html" method="GET">
-            <div class="contact">
-                <div class="name1">
-                    <label for="firstname"></label>
-                    <input type="text" id="firstname" name="firstname" placeholder="First name">
+        <div class="content">
+            <section class="section1">
+                <h1>Want to be your own boss?</h1>
+                <p>Start today and make up to $30/hr driving your own vehicle with Dash!</p>
+            </section>
+            <img src="./images/bg-image/scooter.svg" alt="scooter" class="scooter">
+            <section class="section2">
+                <div class="heading">
+                    <h2>Apply Now</h2>
+                    <p>Enter your info below to get started.</p>
                 </div>
-                <div class="name2">
-                    <label for="lastname"></label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Last name">
-                </div>
-                <div class="phone">
-                    <label for="phone"></label>
-                    <input type="text" id="phone" name="phone" placeholder="Phone number">
-                </div>
-                <div class="email">
-                    <label for="email"></label>
-                    <input type="text" id="email" name="email" placeholder="Email Address">
-                </div>
-            </div>
-                <div class="checkbox">
-                    <input type="checkbox" name="terms" id="terms">
-                    <label for="terms">I agree to dash terms</label>
-                </div>
-                <div class="drive">
-                    <button type="submit">DRIVE WITH US</button>
-                </div>
-                <div class="applied">
-                    <span>Already applied?<a href="#">Check your application status here</a></span>
-                </div>
-            </form>
-        </section>
-    </div>
-        <footer>
+                <form action="drive.html" method="GET">
+                    <div class="contact">
+                        <div class="name1">
+                            <label for="firstname"></label>
+                            <input type="text" id="firstname" name="firstname" placeholder="First name">
+                        </div>
+                        <div class="name2">
+                            <label for="lastname"></label>
+                            <input type="text" id="lastname" name="lastname" placeholder="Last name">
+                        </div>
+                        <div class="phone">
+                            <label for="phone"></label>
+                            <input type="text" id="phone" name="phone" placeholder="Phone number">
+                        </div>
+                        <div class="email">
+                            <label for="email"></label>
+                            <input type="text" id="email" name="email" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" name="terms" id="terms">
+                        <label for="terms">I agree to dash terms</label>
+                    </div>
+                    <div class="drive">
+                        <button type="submit">DRIVE WITH US</button>
+                    </div>
+                    <div class="applied">
+                        <span>Already applied?<a href="#">Check your application status here</a></span>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
         <div class="footer">
             <h3>See how much you can earn with Dash.</h3>
             <p>how many hours do you want to drive with us this week?</p>
             <form action="calculate.html" method="GET">
-            <div class="operation">
-                <div class="hours">
-                    <label for="hours"></label>
-                    <input type="text" id="hours" name="hours" placeholder="Hours">
-                </div>
-                <div class="city">
-                    <label for="city"></label>
-                    <input type="text" id="city" name="city" placeholder="City">
-                </div>
-            </div>
-                <div class="calculate">
-                    <button type="submit">CALCULATE</button>
+                <div class="operation">
+                    <div class="hours">
+                        <label for="hours"></label>
+                        <input type="text" id="hours" name="hours" placeholder="Hours">
+                    </div>
+                    <div class="city">
+                        <label for="city"></label>
+                        <input type="text" id="city" name="city" placeholder="City">
+                    </div>
+                    <div class="calculate">
+                        <button type="submit">CALCULATE</button>
+                    </div>
                 </div>
             </form>
             <div class="icons">
                 <i class="fab fa-facebook"></i>
                 <i class="fab fa-instagram"></i>
                 <i class="fab fa-twitter"></i>
-                <i class="fab fa-linkedin"></i>  
+                <i class="fab fa-linkedin"></i>
             </div>
         </div>
-        </footer>
-    </main>
+    </footer>
 </body>
+
 </html>
