@@ -1,0 +1,275 @@
+/* Adding custom fonts to the website */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Noto+Sans:ital@1&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Noto+Sans:ital@1&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------ CSS RESET -------- */
+
+/* ------ CUSTOM CSS -------- */
+
+html{
+  font-size: 14px;
+  box-sizing: border-box;
+  font-family: 'Roboto' , sans-serif;
+}
+/* using element with ID to ajust width > spec : 0101 */
+nav#nav{
+  width: 100%;
+  margin: 0 auto;
+  border: unset;
+  background-color: unset;
+  padding:unset;
+  background-color:rgba(0, 0, 0, 0.88);
+} 
+/* targeting parent + class > spec : 0021 */
+body .nav .nav-link{
+  text-decoration: none;
+  color:white;
+  font-size: 1rem;
+  font-weight:500;
+  text-transform: uppercase;
+  display: block;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.88);
+  background-color: #caa709;
+  margin: 0 auto;
+  padding: 5px;
+  padding: 15px;
+}
+/* adding hover to nav bar  > spec : 0110 */
+#nav a:hover{
+  background-color: rgba(75, 74, 74, 0.434);
+}
+/* styling h1, h2, and p > spec in order : 0001, 0002, 0002  */
+h1{
+  margin: 0 auto;
+  padding-top: 2rem;
+  font-family: 'lato' , sans-serif;
+  font-size: 2rem;
+}
+h1, h2{
+  text-transform: uppercase;
+}
+section p{
+  line-height: 2rem;
+  padding:5px;
+  margin:20px;
+  font-size: 1rem;
+  font-family: 'Asap', sans-serif;
+  text-align: justify;
+}
+/* unset background color, adujt max width and margin using parent + # > spec: 0101 */
+body #main{
+  max-width: 100%;
+  margin: 0px auto;
+  background-color: unset;
+}
+/* home section > unset background color & padding use section + # > spec: 0101 */
+section#home{
+  background-color:unset;
+  padding: unset;
+  text-align: justify;
+  padding-bottom: 1rem;
+}
+
+/* about section> unset background color & padding, color inherit use section + # > spec: 0101 */
+section#about{
+  background-color: unset;
+  padding: unset;
+  color: inherit;
+}
+/* remove businessman img > section + img > spec: 0002 */
+section img{
+  display: none;
+}
+/* add background image aboutme to h2, Roboto font & color, use class + element > spec: 0011 */
+.about h2{
+  background-image: url(./images/aboutme.jpg);
+  background-position: center;
+  background-size:cover;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height: 300px;
+  font-family: 'Roboto' , sans-serif;
+  font-size: 2.5rem;
+  font-weight:700;
+  color:#caa709;
+}
+/* add background image 'aboutme' to h2, Roboto font & color, use class + element > spec: 0011 */
+.contact h2{
+    background-image: url(./images/contactme.jpg);
+    background-position: center;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height: 300px;
+    font-size: 2.5rem;
+    font-family: 'Roboto' , sans-serif;
+    font-weight:700;
+    color:#caa709;
+}
+/* adj label font size, color, line > target form > spec: 0002 */
+form label{
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color:rgba(0, 0, 0, 0.88);
+}
+/* contact section, unset padding > spec: 0011 */
+section#contact{
+  padding: unset;
+  margin: 0px auto;
+}
+/* unset contact form style, adj width, + padd to align with top > spec: 0002 */
+form.contact-form{
+  background-color: unset;
+  padding: unset;
+  padding-bottom: 2rem;
+  max-width: 60%;
+}
+/* adj input style target form > spec: 0002 */
+form input{
+  padding: 4px;
+  font-size: 1rem;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+/* resize form text area > spec: 0001 */
+textarea{
+  resize: none;
+  width:98%;
+  height: 100px;
+}
+/* style send button > spec: 0001 */
+button{
+  box-sizing: content-box;
+  border-color: rgba(0, 0, 0, 0.88);
+  border-radius: 3px;
+  width: 100px;
+  height: 30px;
+  margin-top: 5px;
+  padding:5px 5px;
+  background-color: rgba(0, 0, 0, 0.88);
+  color:#caa709;
+  font-size: 1rem;
+  font-weight: 300;
+}
+/* add backgroud color to footer, adj alignment & style > spec 0001*/
+footer{
+  background-color: rgba(0, 0, 0, 0.88);
+  margin:0px auto;
+  height:60px;
+  padding:10px;
+  text-align: right;
+  line-height: 2rem;
+  color:#ffffee;
+  font-size: 1rem;
+}
+/* adj style for screen size 760px and more */
+@media screen and (min-width:760px){
+  body #nav{
+    padding-top:10px;
+    padding-bottom:10px;
+  } 
+  #nav a{
+    display: inline-block;
+    background-color:unset;
+    border: unset; 
+  }
+  #nav a:hover {
+    background-color: unset;
+    color:#caa709;
+  }
+  h1{
+    padding-top:4rem;
+    font-size: 3.5rem;
+  }
+  .about h2{
+    height: 400px;
+    font-size: 3.5rem;
+  }
+  .contact h2{
+    height: 400px;
+    font-size: 3.5rem;
+  }
+  section p{
+    font-weight: lighter;
+    line-height: 2rem;
+    padding:5px;
+    letter-spacing: 1px;
+  }
+  form.contact-form{
+    max-width: 400px;
+    padding-bottom: 4rem;
+  }
+}
+/* adj style for screen size 1025px and more */
+@media screen and (min-width:1025px){
+  body #main{
+    background-color:#caa70922;
+  }
+  body .nav .nav-link{
+    text-transform:capitalize;
+    font-size: 1.2rem;
+  }
+}
+/* adj style for screen size 1200px and more */
+@media screen and (min-width:1200px){
+  body #main{
+    max-width: 1200px;
+  }
+  section p{
+    line-height: 2.5rem;
+  }
+}
+  

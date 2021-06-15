@@ -60,35 +60,35 @@ html{
     font-family: 'Montserrat' , sans-serif;
     color:#333131;
   }
-  .clearfix::after{
-    content:"";
-    clear: both;
-    display: table;
-}
+/* add background color to body */
 body{
     background-color:#F7F7FF ;
     width:100%;   
     margin:0 auto; 
 }
+/* set margin & padding to center main content */
 main{
     margin:25px;
     padding-left:5px;
     padding-right:5px;
 }
+/* adj logo size and align using padding */
 header img{
     max-width: 25%;
     margin-left:30px;
     padding-top: 5px;
 }
+/* styling (font, color, margins etc ) for main content */
 h1{
     font-size: 3.8rem;
     font-weight: 600;
     line-height: 1.2;
 }
 .section1 p{
-    font-size: 1.5rem;
+    font-family: inherit;
+    font-size:1.5rem;
     line-height: 1.3;
-    margin-top:2px;  
+    padding-top: 5px;
 }
 .scooter{
     max-width:95%;
@@ -103,20 +103,24 @@ h1{
     padding: 20px 15px 20px 20px;
     margin-top: 15px;
     margin-left:10px;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 h2{
     font-family: inherit;
     font-size:2.5rem;
     font-weight: 600;
 }
-.section2 p{
-    white-space:nowrap;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    max-width: 90%;
-    padding-top:15px;
-    padding-bottom:15px;
+/* display short p section 2*/
+.p1{
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-top:2px;  
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.p2{
+    display:none;
 }
 .contact input{
     color:#9B9B9B;
@@ -131,6 +135,10 @@ h2{
     padding:6px 10px;
     margin-bottom: 11px;  
 } 
+/* add diff background color to name input based on XD file*/
+.name1 input{
+    background-color:rgba(244, 244, 245, 0.5);
+}
 .checkbox{
     display:flex;
     padding-bottom:5px;
@@ -138,7 +146,7 @@ h2{
 }
 .checkbox input{
     box-sizing:border-box;
-    border: 1px #333131;
+    border: 1px solid #333131;
     border-radius: 50%;
     height:55px;
     width: 25px;  
@@ -171,7 +179,7 @@ span a{
     padding:5px;
 }
 .footer{
-    padding:30px;
+    padding:30px 30px 0px 30px;
 }
 footer{
     background-color: #FFFD8C;
@@ -193,7 +201,7 @@ footer p{
 footer input{
     color:#707070;
     font-family: inherit;
-    font-weight:400;
+    font-weight:300;
     font-size: 1rem;
     width:95%;
     height:25px;
@@ -212,14 +220,15 @@ footer button{
     background-color: #FF8480;
     border-radius:11px;
     font-family: inherit;
-    font-size:1.5rem;
+    font-size:1.4rem;
     font-weight:600;
     color:#F7F7FF;
 }
+/* use grid to style operation section easier to adj later on diff screen sizes*/
 .operation{
     display:grid;
     grid-template-columns: 20% 30% 30%;
-    grid-template-rows: 25% 50%;
+    grid-template-rows: 20% 20% 20%;
     grid-gap:20px;
 }
 .hours{
@@ -235,11 +244,18 @@ footer button{
     display: flex;
     justify-content: center;
     gap:35px;
-    margin-right:20px;
+    grid-column:1/4;
+    grid-row:3;
+    margin-top:10px;
+}
+/* display icons only for mobile screen*/
+.social{
+    display:none;
 }
 .fab{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
+/* adj style for screen 560px and more */
 @media screen and (min-width:560px){
     header img{
         max-width:15%;
@@ -252,6 +268,9 @@ footer button{
     }
     .section2{
         max-width:90%;
+    }
+    .name1 input{
+        background-color:#F4F4F5;
     }
     .icons{
         gap:40px;
@@ -269,6 +288,10 @@ footer button{
         margin-left:auto;
         margin-right:auto;
     }
+    .section2{
+        max-width:80%;
+        margin-left:50px;
+    }
     .footer{
         margin-left:30px;
     }
@@ -276,6 +299,7 @@ footer button{
         padding-top: 10px;
     }
 }
+/* adj style for screen 768px and more */
 @media screen and (min-width:768px){
     header img{
         max-width:15%;
@@ -286,8 +310,7 @@ footer button{
     }
     .section1 p{
         font-size:1.7rem;
-        position:relative;
-        top:20px;
+        top:30px;
     }
     .scooter{
         margin-top:unset;
@@ -298,14 +321,16 @@ footer button{
         margin-left:80px;
         padding-left:30px;
     }
-    .section2 p{
-        font-size:1.8rem;
+    .p1{
+        font-size:1.5rem;
     }
     form span{
         font-size:1rem;
     }
     .operation{
         grid-template-columns: 20% 30% 30%;
+        grid-template-rows:25% 50%;
+        grid-gap:20px; 
     }
     .hours{
         grid-column:1/2;
@@ -316,6 +341,10 @@ footer button{
     .calculate{
         grid-column:3/4;
     }
+    .icons{
+        grid-row:2;
+        margin-top:20px;
+    }
     .contact{
         display:flex;
         flex-direction: column;
@@ -324,6 +353,7 @@ footer button{
         order:1;
     }
 }
+/* adj style for screen 900px and more */
 @media screen and (min-width:900px){
     header img{
         max-width:15%;
@@ -333,6 +363,100 @@ footer button{
     }
     .section2{
         max-width:60%;
+        margin-left:150px;
+    }
+    .operation{
+        grid-template-columns: 10% 20% 25% 40%;
+        grid-template-rows: 50% 50%;
+    }
+    .icons{
+        gap:15px; 
+        grid-column: 4/5;
+        grid-row:1;
+        margin-top:unset;
+        padding-left:50px;
+    }
+}
+/* adj style for screen 1000px and more */
+@media screen and (min-width:1000px){
+    h1{
+        font-size:3.5rem;
+    }
+    .section1 p{
+        font-size:2rem;
+    }
+    .section2{
+        max-width:50%;
         margin-left:200px;
+    }
+}
+/* adj style for screen 1200px and more / using flex to display content as per mockup */
+@media screen and (min-width:1200px){
+    header img{
+        max-width:10%;
+    }
+    .section1 p{
+        font-size: 1.5rem;
+    }
+    .p1{
+        display:none;
+    }
+    .p2{
+        display:block;
+        font-size: 1.2rem;
+        line-height: 1.3;
+        padding-bottom:10px;
+        padding-top:10px;
+    }
+    .content{
+        display:flex;
+        flex-direction: row;
+        gap:2px;
+        justify-content:center;
+        align-items: flex-start;
+    }
+    .scooter{
+        width:380px;
+    }
+    .section2{
+        margin:unset;
+        width:70%;
+    }
+    .operation{
+        grid-template-columns: 5% 20% 15% 55%;
+        grid-template-rows: 50% 50%;
+    }
+    .icons{
+        display:none;
+    }
+    .social{
+        display:flex;
+        justify-content: flex-end;
+        gap:20px; 
+        grid-column: 4/5;
+        grid-row:1;
+        margin-right: 20px;
+        margin-bottom: 10px;
+    }
+}
+/* adj style for screen 1500px and more */
+@media screen and (min-width:1500px){
+    header img{
+        max-width:5%;
+    }
+    .p2{
+        display:block;
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    .scooter{
+        padding:unset;
+        margin:unset;
+        width:400px;
+        position:relative;
+    }
+    .section2{
+        margin:unset;
+        width:30%;
     }
 }
