@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ------ CSS RESET-------- */
+/* ------ CUSTOM CSS-------- */
+
+html{
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: 'Raleway' , sans-serif;
+    margin:0 auto;
+    padding:0;
+  }
+body{
+    margin:0;
+}
+header{
+    background-color: #351431;
+    height:100px;
+}
+.logo{
+    max-width: 80px;  
+    padding-top: 15px;
+    padding-left: 30px;
+}
+nav a{
+    color: #351431;
+    border-bottom: 0.5px solid #351431;
+}
+.site-nav{
+    text-align: center;
+}
+.site-nav a{
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+.home{
+    color:white;
+    background-color:#351431;
+}
+nav li{
+    text-decoration: none;
+}
+#search{
+    font-size: 16px;
+    border:0;
+    outline:none;
+    padding-left: 10px;
+}
+.fa-search{
+    color: #35143178;
+    font-weight:600;
+    padding-top: 2px;
+}
+.search-box{
+    width:50%;
+    font-family: inherit;
+    display:flex;
+    width:200px;
+    border: 1px solid #351431;
+    border-radius: 19px;
+    padding:5px;
+    margin: auto;
+}
+.search-wrap{
+    padding-top:25px;
+    padding-bottom:80px;
+}
+.products{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.products img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    box-shadow: 0px 6px 6px rgba(51, 49, 49, 0.4);
+}
+.products h2{
+    font-family:inherit;
+    font-size:1.1rem;
+    font-weight: bold;
+    color: #351431;
+    padding: 30px;
+}
+
+.slideshow{
+ background-color: #ACFCD9;
+ margin:0 auto;
+ margin-top:20px;
+}
+.container{
+    padding:30px 15px 15px 40px;
+}
+footer{
+    background-color: rgba(53, 20, 49, 0.71);
+    color:white;
+    font-size: 14px;
+    height: 150px;
+    padding-top: 10px;
+}
+.links a{
+    text-decoration: none;
+    color:white;
+    font-family: inherit;
+}
+.links ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap:30px;
+    padding: 20px;
+}
+.links{
+    grid-column:1/5;
+}
+.social{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+    grid-column:1/5;
+    grid-row: 2/3;
+}
+.social-icons{
+    display: flex;
+    gap:10px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-around;
+    grid-column:1/5;
+    grid-row: 3/4;
+}
+.mode{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    padding:50px;
+}
+.mode h1{
+    color:#351431 ;
+    font-family: inherit;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+.mode a{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: inherit;
+    color: white;
+}
+.mode li{
+    background-color: rgba(53, 20, 49, 0.71);
+    margin: auto;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 25px;
+    border-radius: 60px;
+    padding:2px;
+    line-height: 1.5;
+}
