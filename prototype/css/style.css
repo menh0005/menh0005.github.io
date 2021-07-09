@@ -130,8 +130,8 @@ nav a:hover{
     text-align: center;
 }
 .products img{
-    width:150px;
-    height:150px;
+    width:120px;
+    height:120px;
     border-radius: 50%;
     box-shadow: 0px 6px 6px rgba(51, 49, 49, 0.4);
 }
@@ -197,7 +197,6 @@ input[name="r"]{
 }
 .slide img{
     width:100%;
-    /*  */
 }
 #r1:checked ~ .s1{
     margin-left:0;
@@ -244,9 +243,6 @@ input[name="r"]{
 .mode a:hover{
     color: rgb(172, 252, 217);
 }
-.container{
-    padding:30px 15px 15px 40px;
-}
 footer{
     background-color: rgba(53, 20, 49, 0.71);
     color:white;
@@ -265,15 +261,14 @@ footer{
 .links ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+    justify-content: space-around;  
 }
 .container{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3,1fr);
-    grid-gap:30px;
-    padding: 20px;
+    grid-gap:25px;
+    padding-top: 15px;
 }
 .links{
     grid-column:1/5;
@@ -288,10 +283,57 @@ footer{
 .social-icons{
     display: flex;
     gap:10px;
+    margin-top:10px;
 }
 .bottom{
     display: flex;
     justify-content: space-around;
     grid-column:1/5;
     grid-row: 3/4;
+}
+.top p{
+    display:none;
+}
+.fa-arrow-up{
+    color:white;
+    font-size: 19px;
+    line-height: 0.2;
+}
+/* Styling Team page */
+
+main p{
+ font-family: inherit;
+ margin:15px;
+ font-size:1rem;
+ line-height: 1.5;
+ text-align:justify;
+}
+h3{
+    font-family:inherit;
+    font-weight: bold;
+    color:rgb(53, 20, 49);
+    text-align:center;
+    margin-top:10px;
+}
+h4{
+    text-align:center;
+    font-size:12px;
+    margin-top:10px;
+}
+.quote{
+    margin:20px;
+    font-size:2rem;
+    color:rgba(128, 128, 128, 0.421);
+}
+.fa-instagram-square{
+    font-size:1.5rem;
+    color:#C13584;
+}
+.fa-linkedin{
+    font-size:1.5rem;
+    color:#0e76a8;
+}
+.media{
+   display:inline-block;
+   margin-bottom: 50px;
 }
