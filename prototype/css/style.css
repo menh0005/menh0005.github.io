@@ -299,7 +299,10 @@ footer{
     line-height: 0.2;
 }
 /* Styling Team page */
-
+.team{
+    padding-left:15px;
+    padding-right:15px;
+}
 main p{
  font-family: inherit;
  margin:15px;
