@@ -71,27 +71,41 @@
             </div>
         </section>
         <section>
-            <div class="slideshow">
-                <figure>
-                    <img src="./images/gelato/gelato-slide1.jpg" alt="slide1" srcset="images/gelato/gelato-slide1-320.jpg 320w,
+            <div class="slideshow middle">
+                <div class="slide-img">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <div class="slide s1">
+                        <img src="./images/gelato/gelato-slide1.jpg" alt="slide1" srcset="images/gelato/gelato-slide1-320.jpg 320w,
                                 images/gelato/gelato-slide1-480.jpg 480w,
                                 images/gelato/gelato-slide1-720.jpg 720w,
                                 images/gelato/gelato-slide1-960.jpg 960w,
                                 images/gelato/gelato-slide1-1200.jpg 1200w">
-                    <img src="./images/gelato/gelato-slide2.jpg" alt="slide2" srcset="images/gelato/gelato-slide2-320.jpg 320w,
+                    </div>
+                    <div class="slide">
+                        <img src="./images/gelato/gelato-slide2.jpg" alt="slide2" srcset="images/gelato/gelato-slide2-320.jpg 320w,
                                 images/gelato/gelato-slide2-480.jpg 480w,
                                 images/gelato/gelato-slide2-720.jpg 720w,
                                 images/gelato/gelato-slide2-960.jpg 960w,
                                 images/gelato/gelato-slide2-1200.jpg 1200w">
-                    <img src="./images/gelato/gelato-slide3.jpg" alt="slide3" srcset="images/gelato/gelato-slide3-320.jpg 320w,
+                    </div>
+                    <div class="slide">
+                        <img src="./images/gelato/gelato-slide3.jpg" alt="slide3" srcset="images/gelato/gelato-slide3-320.jpg 320w,
                                 images/gelato/gelato-slide3-480.jpg 480w,
                                 images/gelato/gelato-slide3-720.jpg 720w,
                                 images/gelato/gelato-slide3-960.jpg 960w,
                                 images/gelato/gelato-slide3-1200.jpg 1200w">
-                </figure>
+                    </div>
+                    <div class="navigation">
+                        <label for="r1" class="bar"></label>
+                        <label for="r2" class="bar"></label>
+                        <label for="r3" class="bar"></label>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class=mode>
+        <section class="mode">
             <h1>Which mode are you on today?</h1>
             <ul>
                 <li><a href="#">Vegan</a></li>
@@ -101,30 +115,31 @@
         </section>
     </main>
     <footer>
-    <div class="container">
-        <div class=links>
-            <ul>
-                <li><a href="#">Nutrition</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Where</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
-            </ul>
-        </div>
-        <div class="social">
-            <h4>Follow Us</h4>
-            <div class="social-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-twitter"></i>
-                <i class="fab fa-instagram"></i>
+        <div class="container">
+            <div class=links>
+                <ul>
+                    <li><a href="#">Nutrition</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Where</a></li>
+                    <li><a href="./contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+            <div class="bottom">
+                <p class="copy">
+                    &copy;2021 GelatoMode
+                </p>
+
+                <i class="fas fa-arrow-up"></i>
             </div>
         </div>
-        <div class="bottom">
-            <p class="copy">
-                &copy;2021 GelatoMode
-            </p>
-            <i class="fas fa-arrow-up"></i>
-        </div>
-    </div>
     </footer>
 </body>
 
