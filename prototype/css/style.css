@@ -98,10 +98,9 @@ nav a:hover{
     background-color:#351431;
 }
 #search{
-    font-size: 16px;
+    font-size: 15px;
     border:0;
     outline:none;
-    padding-left: 10px;
 }
 .fa-search{
     color: #35143178;
@@ -109,18 +108,17 @@ nav a:hover{
     padding-top: 2px;
 }
 .search-box{
-    width:50%;
     font-family: inherit;
     display:flex;
+    justify-content: center;
     width:200px;
     border: 1px solid #351431;
     border-radius: 19px;
-    padding:5px;
+    padding:3px;
     margin: auto;
 }
 .search-wrap{
-    padding-top:25px;
-    padding-bottom:80px;
+    padding:25px 0px 80px 0px;
 }
 .products{
     display:flex;
@@ -130,8 +128,8 @@ nav a:hover{
     text-align: center;
 }
 .products img{
-    width:120px;
-    height:120px;
+    width:130px;
+    height:130px;
     border-radius: 50%;
     box-shadow: 0px 6px 6px rgba(51, 49, 49, 0.4);
 }
@@ -147,7 +145,7 @@ nav a:hover{
     transform: scale(1);
     } 
   }
-.products h2{
+h2{
     font-family:inherit;
     font-size:1.1rem;
     font-weight: bold;
@@ -160,12 +158,9 @@ nav a:hover{
     position:relative;
     overflow:hidden;
     width:90%;
-    height:500px;
-    border: solid 20px rgba(172, 252, 217, 0.345);
+    height:300px;
+    border: solid 30px rgba(172, 252, 217, 0.345);
 }
-/* .slide-img{
-    min-height: -webkit-fill-available;
-} */
 .navigation{
     position: absolute;
     bottom: 10px;
@@ -286,10 +281,14 @@ footer{
     display: flex;
     gap:10px;
 }
-.bottom{
+.copy{
     display: flex;
     justify-content: space-around;
-    grid-column:1/5;
+    grid-column:1/3;
+    grid-row: 3/4;
+}
+.top{
+    grid-column:4/5;
     grid-row: 3/4;
 }
 .top p{
@@ -300,7 +299,7 @@ footer{
     font-size: 19px;
     line-height: 0.2;
 }
-/* Styling Team page */
+/* ----------------- Styling Team page ----------------*/
 .team{
     padding-left:15px;
     padding-right:15px;
@@ -313,9 +312,10 @@ main p{
  text-align:justify;
  color:#393939;
 }
-.thanks{
+.intro{
     margin-bottom:50px;
 }
+
 h3{
     font-family:inherit;
     font-size:1rem;
@@ -324,16 +324,17 @@ h3{
     text-align:center;
     margin-top:20px;
 }
-main h4{
+.title p{
     text-align:center;
     color:#393939;
     font-size:12px;
     margin-top:10px;
 }
-.quote{
-    margin:20px;
+.comma{
     font-size:2rem;
     color:rgba(128, 128, 128, 0.421);
+    display:flex;
+    justify-content: center;
 }
 .fa-instagram-square{
     font-size:1.5rem;
@@ -344,19 +345,21 @@ main h4{
     color:#0e76a8;
 }
 .media{
-   display:inline-block;
    margin-top:10px;
    margin-bottom: 50px;
+   gap:5px;
+   display:flex;
+   justify-content: center;
 }
 .picture{
-display:flex;
-justify-content: center;
+    display:flex;
+    justify-content: center;
 }
 .picture img{
     width:80%;
     border-radius: 20px;
 }
-/* styling contact page */
+/* ----------------- styling contact page ----------------- */
 
 .contact{
     padding-left:30px;
@@ -364,13 +367,37 @@ justify-content: center;
 }
 .contact h1{
     font-family: inherit;
-    color:rgb(53, 20, 49);
-    font-size: 20px;
+    color:rgba(53, 20, 49, 0.174);
+    font-size: 3.5vw;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     line-height: 1.5;
     margin-bottom: 50px;
+    -webkit-text-stroke: 0.3vw rgba(53, 20, 49, 0.71);
+    position:relative;
+}
+.contact h1::before{
+    content: attr(data-text);
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    color:rgb(53, 20, 49);
+    -webkit-text-stroke: 0vw rgba(53, 20, 49, 0.71);
+    border-right: 1px solid rgba(53, 20, 49, 0.71);
+    overflow: hidden;
+    animation: show 6s linear infinite;
+}
+@keyframes show{
+    0%,10%,100%
+    {
+        width:0%;
+    }
+    70%,90%{
+        width:100%;
+    }
 }
 .contact-img{
     display:flex;
@@ -386,7 +413,7 @@ form{
 }
 label{
     font-family: inherit;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color:rgba(53, 20, 49, 0.71) ;
 }
 form input{
@@ -409,6 +436,8 @@ textarea{
 }
 .send button{
     color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
     background-color: rgba(53, 20, 49, 0.71);
     margin: 10px auto;
     margin-bottom: 30px;
@@ -416,6 +445,126 @@ textarea{
     height: 25px;
     border-radius: 60px;
     padding:2px;
-    line-height: 1.5;
+    line-height: 1.2;
     box-sizing: content-box;
+}
+/* -----------------  media queries ----------------- */
+@media screen and (min-width:550px){
+    .logo{
+        max-width: 90px;   
+    }
+    .products{
+        display: grid;
+        grid-template-columns: repeat(2,35%);
+        grid-template-rows: repeat(2,50%);
+        gap:2%;
+    }
+    .slideshow{
+        height:400px;
+    }
+}
+@media screen and (min-width:760px){
+    .logo{
+        max-width: 100px;   
+    }
+    header{
+        display:flex;
+        justify-content: center;
+        height:130px;
+    }
+    nav a{
+        color: #351431;
+        border-bottom: none;
+    }
+    .site-nav{
+        text-align: unset;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-links{
+        display:flex;
+        gap: 20px;
+        padding-top: 10px ;
+        padding-left:20px;
+    }
+    .search-wrap{
+        padding:15px 20px 80px 0px;
+    }
+    .site-nav a{
+        padding: 10px;
+        display: flex;
+    }
+    .home{
+        color:#351431;
+        background-color:unset;
+    } 
+    .products{
+        margin-bottom:50px;
+    }
+    .products img{
+        width:140px;
+        height:140px;
+    }
+    .slideshow{
+        height:500px;
+        border: solid 40px rgba(172, 252, 217, 0.345);
+    }
+    .mode h1{
+        font-size: 20px;
+    }
+    .mode ul{
+        display:flex;
+        justify-content: center;
+    }
+    .mode li{
+        margin:20px;
+    }
+    .mode a{
+        font-size: 14px;
+    }
+    .top p{
+        display:inline-block;
+    }
+}
+@media screen and (min-width:900px){
+    .products{
+        grid-template-columns: repeat(4,20%);
+        gap:2%;
+        margin-bottom:80px;
+        margin-top:50px;
+    }
+    .products img{
+        width:170px;
+        height:170px;
+    }
+    .slideshow{
+        width:70%;
+    }
+    footer{
+        height:100px;
+    }
+    .container{
+        display:flex;
+        justify-content: space-evenly;
+        padding-top:40px;
+    }
+    .links{
+        order:2;  
+        flex-grow: 0.5;
+    }
+    .social{
+        order:3;
+    }
+    .top{
+        order:4;
+    }
+}
+@media screen and (min-width:1200px){
+    .products{
+        grid-template-columns: repeat(4,15%);
+    }
+    .slideshow{
+        width:60%;
+        height:500px;
+    }
 }
