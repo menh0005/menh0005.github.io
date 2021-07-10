@@ -155,15 +155,17 @@ nav a:hover{
     padding: 30px;
 }
 .slideshow{
- background:  rgba(172, 252, 217, 0.345);
- margin:auto;
- margin-top:10px;
- position:relative;
- overflow:hidden;
- width:90%;
- height:300px;
- border: solid 20px rgba(172, 252, 217, 0.345);
+    background:  rgba(172, 252, 217, 0.345);
+    margin:10px auto;
+    position:relative;
+    overflow:hidden;
+    width:90%;
+    height:500px;
+    border: solid 20px rgba(172, 252, 217, 0.345);
 }
+/* .slide-img{
+    min-height: -webkit-fill-available;
+} */
 .navigation{
     position: absolute;
     bottom: 10px;
@@ -353,4 +355,67 @@ justify-content: center;
 .picture img{
     width:80%;
     border-radius: 20px;
+}
+/* styling contact page */
+
+.contact{
+    padding-left:30px;
+    padding-right:30px;
+}
+.contact h1{
+    font-family: inherit;
+    color:rgb(53, 20, 49);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+.contact-img{
+    display:flex;
+    justify-content: center;
+}
+.contact img{
+    max-width:80%;
+    margin-bottom:50px;
+}
+form{
+    padding:30px;
+    max-width:90%;
+}
+label{
+    font-family: inherit;
+    font-size: 1rem;
+    color:rgba(53, 20, 49, 0.71) ;
+}
+form input{
+    width: 95%;
+    margin: 10px 0px 10px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5em;
+    border: 1px solid rgba(53, 20, 49, 0.71);
+    border-radius: 2px;
+}
+textarea{
+    resize: none;
+    width:95%;
+    height: 100px;
+    margin: 10px 0px 10px;
+}
+.send{
+    display:flex;
+    justify-content: center;
+}
+.send button{
+    color: white;
+    background-color: rgba(53, 20, 49, 0.71);
+    margin: 10px auto;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 25px;
+    border-radius: 60px;
+    padding:2px;
+    line-height: 1.5;
+    box-sizing: content-box;
 }
