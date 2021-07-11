@@ -418,9 +418,11 @@ h3{
     box-shadow: 0px 6px 6px rgba(51, 49, 49, 0.4);
 }
 form{
-    padding-left:20px;
-    max-width:90%;
+    max-width:100%;
     margin-bottom:100px;
+    display:grid;
+    grid-template-columns: 90%;
+    justify-content: center;
 }
 label{
     font-family: inherit;
@@ -463,7 +465,7 @@ textarea{
 }
 /* -----------------  media queries ----------------- */
 @media screen and (min-width:550px){
-/* home page */
+/* ----------------- Home page queries ----------------*/
     .logo{
         max-width: 90px;   
     }
@@ -476,7 +478,7 @@ textarea{
     .slideshow{
         height:500px;
     }
-/* team page */
+/* ----------------- Team page queries ----------------*/
     .picture img{
         width:70%;
     }
@@ -493,13 +495,12 @@ textarea{
     .quote{
         line-height: 2;
     }
-/* contact page */
+/* ----------------- Contact page queries ----------------*/
     label{
         font-size: 1rem;
     }
-    form {
-       margin-left:60px;
-       max-width:70%;
+    form{
+        grid-template-columns: 70%;
     }
     form input{
         height: 20px;
@@ -512,6 +513,7 @@ textarea{
     }
 }
 @media screen and (min-width:760px){
+/* ----------------- Home page queries ----------------*/
     .logo{
         max-width: 100px;   
     }
@@ -573,7 +575,7 @@ textarea{
     .top p{
         display:inline-block;
     }
-/* team page */
+/* ----------------- Team page queries ----------------*/
     .picture img{
         width:60%;
     }
@@ -587,11 +589,10 @@ textarea{
     .title p{
         font-size:15px;
     }
-/* contact page */
-    form {
-        margin-left:110px;
-        max-width:65%;
-     }
+/* ----------------- Contact page queries ----------------*/
+form{
+    grid-template-columns: 60%;
+}
      form input{
          height: 30px;
      }
@@ -629,20 +630,14 @@ textarea{
     .top{
         order:4;
     }
-/* team page */
+/* ----------------- Team page queries ----------------*/
     .picture img{
         width:45%;
     }
-    form {
-        padding:50px;
-        margin-left:170px;
-        max-width:40%;
-     }
-/* contact page */
-    form {
-        margin-left:150px;
-        max-width:60%;
-     }
+/* ----------------- Contact page queries ----------------*/
+    form{
+        grid-template-columns: 60%;
+    }
      textarea{
          height: 150px;
      }
@@ -652,13 +647,14 @@ textarea{
 
 }
 @media screen and (min-width:1200px){
+/* ----------------- Home page queries ----------------*/
     .products{
         grid-template-columns: repeat(4,15%);
     }
     .slideshow{
         width:70%;
     }
-/* team page */
+/* ----------------- Team page queries ----------------*/
     .team{
         padding-left:40px;
         padding-right:40px;
@@ -688,27 +684,26 @@ textarea{
     .quote{
         padding:20px;
     }
-/* contact page */
-     form {
-        margin-left:260px;
-        max-width:50%;
-     }
+/* ----------------- Contact page queries ----------------*/
      textarea{
          height: 150px;
      }
-     .contact img{
-        max-width:40%;
+    .contact-info{
+        display:grid;
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: 30% 50%;
+        justify-content: center;
+        margin: 150px 0px 150px 0px;
     }
-}
-@media screen and (min-width:1500px){
-    form {
-        margin-left:450px;
-        max-width:40%;
-     }
-     textarea{
-         height: 150px;
-     }
-     .contact img{
-        max-width:30%;
+    .contact-img{
+        max-width:100%;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        align-self:center
     }
-}
+    form{
+        grid-template-columns: 60%;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        align-self:center;
+    }
