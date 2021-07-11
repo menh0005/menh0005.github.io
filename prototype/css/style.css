@@ -377,14 +377,13 @@ h3{
 }
 .contact h1{
     font-family: inherit;
-    color:rgba(53, 20, 49, 0.174);
-    font-size: 3.5vw;
+    color:white;
+    font-size: 2.5vw;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
     line-height: 1.5;
     margin-bottom: 50px;
-    -webkit-text-stroke: 0.3vw rgba(53, 20, 49, 0.71);
     position:relative;
 }
 .contact h1::before{
@@ -395,17 +394,15 @@ h3{
     width:0;
     height:100%;
     color:rgb(53, 20, 49);
-    -webkit-text-stroke: 0vw rgba(53, 20, 49, 0.71);
-    border-right: 1px solid rgba(53, 20, 49, 0.71);
+    border-right: 1px solid white;
     overflow: hidden;
-    animation: show 6s linear infinite;
+    animation: show 5s ease-in-out infinite;
 }
 @keyframes show{
-    0%,10%,100%
-    {
-        width:0%;
+    10%{
+        width:60%;
     }
-    70%,90%{
+    100%{
         width:100%;
     }
 }
