@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -38,30 +37,34 @@
         </article>
         <div class=contact-info>
             <div class="contact-img">
-                <img src="./images/gelato/gelato-slide2.jpg" alt="slide2" srcset="images/gelato/gelato-slide2-320.jpg 320w,
-                images/gelato/gelato-slide2-480.jpg 480w,
-                images/gelato/gelato-slide2-720.jpg 720w,
-                images/gelato/gelato-slide2-960.jpg 960w,
-                images/gelato/gelato-slide2-1200.jpg 1200w" sizes="(min-width:1200px) 50vw, 100vw">
+                <picture>
+                    <source srcset="images/gelato/contact-sq-480.jpg 480w,
+                    images/gelato/contact-sq-640.jpg 640w,
+                    images/gelato/contact-sq-800.jpg 800w" sizes="55vw" media="(max-width: 960px) ">
+                    <source srcset="images/gelato/contact-320.jpg 320w,
+                    images/gelato/contact-480.jpg 480w,
+                    images/gelato/contact-720.jpg 720w,
+                    images/gelato/contact-960.jpg 960w,
+                    images/gelato/contact-1200.jpg 1200w" sizes="40vw" media="(min-width: 961px) ">
+                    <img src="images/gelato/contact-michel-stockman-_xZXKYDYQGE-unsplash.jpg" alt="Contact">
+                </picture>
             </div>
-            <div>
+            <div class="form">
                 <form action="info.html" method="GET">
-                    <div class="form">
-                        <div>
-                            <label for="fullname">Full Name</label>
-                            <input type="text" id="fullname" name="fullname" placeholder="">
-                        </div>
-                        <div>
-                            <label for="email">Email</label>
-                            <input type="text" id="email" name="email" placeholder="">
-                        </div>
-                        <div>
-                            <label for="message">Message</label>
-                            <textarea name="message" id="message" class="box"></textarea>
-                        </div>
-                        <div class="send">
-                            <button type="submit">send</button>
-                        </div>
+                    <div>
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" placeholder="">
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="">
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" class="box"></textarea>
+                    </div>
+                    <div class="send">
+                        <button type="submit">send</button>
                     </div>
                 </form>
             </div>
