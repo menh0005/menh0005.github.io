@@ -400,7 +400,7 @@ h3{
 }
 @keyframes show{
     10%{
-        width:60%;
+        width:90%;
     }
     100%{
         width:100%;
@@ -415,6 +415,11 @@ h3{
     max-width:100%;
     align-self:center;
     margin-bottom:50px;
+   
+}
+.contact img{
+    border-radius: 20px;
+    box-shadow: 0px 6px 6px rgba(51, 49, 49, 0.4);
 }
 form{
     max-width:100%;
@@ -587,7 +592,7 @@ textarea{
     }
 /* ----------------- Contact page queries ----------------*/
 form{
-    grid-template-columns: 60%;
+    grid-template-columns: 50%;
 }
      form input{
          height: 30px;
@@ -632,7 +637,7 @@ form{
     }
 /* ----------------- Contact page queries ----------------*/
     form{
-        grid-template-columns: 60%;
+        grid-template-columns: 40%;
     }
      textarea{
         height: 150px;
