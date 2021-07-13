@@ -51,8 +51,9 @@ table {
 	border-spacing: 0;
 }
 /* ------ CSS RESET-------- */
-/* -------------------------- CUSTOM CSS--------------------------  */
+/* ------ CUSTOM CSS-------- */
 
+/* adding style to the home page and setting the overall style of the pages (nav and footer)*/
 html{
     font-size: 16px;
     box-sizing: border-box;
