@@ -58,19 +58,21 @@ html{
     font-size: 16px;
     box-sizing: border-box;
     font-family: 'Raleway' , sans-serif;
-    margin:0 auto;
-    padding:0;
-  }
+}
 body{
     margin:0;
 }
+/* set a margin bottom to all main content */ 
+
 main{
     margin-bottom: 70px;
 }
+/* set a fixed height to the header  */ 
 header{
     background-color: #351431;
     height:100px;
 }
+/* set a fixed width to the logo to be adjusted on difd vw along with padding  */ 
 .logo{
     max-width: 80px;  
     padding-top: 15px;
@@ -88,6 +90,7 @@ nav a{
     padding: 10px;
     display: block;
 }
+/* add a background color to home link + change text color & background on hover for links*/ 
 .home{
     color:white;
     background-color:#351431;
@@ -102,6 +105,7 @@ nav a:hover{
     color: rgb(172, 252, 217);
     background-color:#351431;
 }
+/* remove search input style, add custom style and use flex to align content */ 
 #search{
     font-size: 15px;
     border:0;
@@ -125,6 +129,8 @@ nav a:hover{
 .search-wrap{
     padding:25px 0px 80px 0px;
 }
+/* Target div.products to display elements vertically using flex*/ 
+
 .products{
     display:flex;
     flex-direction: column;
@@ -132,12 +138,15 @@ nav a:hover{
     justify-content: center;
     text-align: center;
 }
+/* adjust poducts img width and add animation on hover */
 .products img{
     width:150px;
     height:150px;
     border-radius: 50%;
     box-shadow: 0px 10px 10px rgba(51, 49, 49, 0.4);
 }
+/* use soft animation to increase  the size of the cercle on hover */
+
 .products img:hover{
     animation: 1s pop linear;
 }
@@ -152,6 +161,7 @@ h2{
     color: #351431;
     padding: 30px;
 }
+/* follow animation tutorial ref readme.md to animate slideshow */
 .slideshow{
     background:  rgba(172, 252, 217, 0.345);
     margin:50px auto;
@@ -171,13 +181,11 @@ h2{
 .bar{
     width: 50px;
     height:10px;
-    border: 2px solid rgb(53, 20, 49);
-    margin:4px;
+    border: 1px solid rgb(172, 252, 217);
+    background: rgb(53, 20, 49);
+    margin:5px;
     cursor: pointer;
     transition: 0.4s;
-}
-.bar:hover{
-    background: rgb(53, 20, 49);
 }
 input[name="r"]{
     position: absolute;
@@ -204,6 +212,7 @@ input[name="r"]{
 #r3:checked ~ .s1{
     margin-left: -40%;
 }
+/* use div.mode to display content vertically and center*/
 .mode{
     display: flex;
     flex-direction: column;
@@ -228,6 +237,8 @@ input[name="r"]{
     padding:2px;
     line-height: 1.9;
 }
+/* on hover change background to full color and change text color to green*/
+
 .mode li:hover{
     background-color: #351431;
 }
@@ -240,6 +251,8 @@ input[name="r"]{
 .mode a:hover{
     color: rgb(172, 252, 217);
 }
+/* Add a fix height to the footer and add background color*/
+
 footer{
     background-color: rgba(53, 20, 49, 0.71);
     color:white;
@@ -260,6 +273,7 @@ footer{
     flex-direction: row;
     justify-content: space-around;  
 }
+/* Target div.container to display content over 3 rows > use grid  */
 .container{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
@@ -307,6 +321,9 @@ footer{
     line-height: 0.2;
 }
 /* -------------------------- Styling Team page -------------------------- */
+
+/* follow tutorial ref readme.md for H1 animation using height 
+and adj keyframes (like window blinds effect)*/
 .pres h1{
     font-family: inherit;
     color:white;
@@ -407,6 +424,7 @@ h3{
     padding-left:30px;
     padding-right:30px;
 }
+/* Use same animation for h1 team page */
 .contact h1{
     font-family: inherit;
     color:white;
@@ -440,14 +458,14 @@ h3{
     justify-content: center;
 }
 .contact-img{
-    max-width:100%;
     align-self:center;
     margin-bottom:50px;
 }
-.contact img{
+.contact-info img{
     border-radius: 20px;
     box-shadow: 0px 6px 6px rgba(51, 49, 49, 0.4);
 }
+/* Target div.form and display grid to center and maintain throughout all vw */
 form{
     max-width:100%;
     margin-bottom:100px;
@@ -486,7 +504,6 @@ textarea{
     text-transform: uppercase;
     background-color: rgba(53, 20, 49, 0.71);
     margin: 10px auto;
-    margin-bottom: 30px;
     width: 100px;
     height: 25px;
     border-radius: 60px;
@@ -494,9 +511,13 @@ textarea{
     line-height: 1.2;
     box-sizing: content-box;
 }
-/* --------------------------  media queries --------------------------  */
+/* -------------  Add media queries for 550px / 760 / 1200/ 1500 -------------  */
+
 @media screen and (min-width:550px){
-/* --------- Home page queries --------- */
+
+/* --------- Home page adj --------- */
+
+/* Increase products img sizes*/
     .products img{
         width:160px;
         height:160px;
@@ -504,12 +525,14 @@ textarea{
     .logo{
         max-width: 90px;   
     }
+/* Display products img in 2 row 2 columns*/
     .products{
         display: grid;
         grid-template-columns: repeat(2,35%);
         grid-template-rows: repeat(2,50%);
         gap:2%;
     }
+/* Decrease slideshow height */
     .slideshow{
         height:500px;
     }
@@ -520,7 +543,9 @@ textarea{
         font-size:15px;
     }
     
-/* ----------------- Team page queries ----------------*/
+/* --------- Team page adj --------- */
+
+/* Reduce team pictures sizes and ajd padding, font size, line height & align P center*/
     .picture img{
         width:70%;
     }
@@ -537,13 +562,16 @@ textarea{
     .team p{
         line-height: 2;
     }
+
     .team p{
         text-align: center;
     }
     .pres h1{
         font-size: 4vw;
     }
-/* ----------------- Contact page queries ----------------*/
+/* --------- Contact page adj --------- */
+
+/* Ajd font size, input& text area height + form column width*/
     label{
         font-size: 1rem;
     }
@@ -561,7 +589,10 @@ textarea{
     }
 }
 @media screen and (min-width:760px){
-/* ----------------- Home page queries ----------------*/
+
+/* --------- Home page adj --------- */
+
+/* Increase products img sizes*/
     .products img{
         width:170px;
         height:170px;
@@ -569,11 +600,13 @@ textarea{
     .logo{
         max-width: 100px;   
     }
+/* Adj header to display logo center*/
     header{
         display:flex;
         justify-content: center;
         height:130px;
     }
+/* Adj Nav display, links text color & background*/
     nav a{
         color: #351431;
         border-bottom: none;
@@ -603,14 +636,12 @@ textarea{
     .products{
         margin-bottom:50px;
     }
+/* Reduce products img sizes */
     .products img{
         width:160px;
         height:160px;
     }
-    .slideshow{
-        height:500px;
-        border: solid 15px rgba(172, 252, 217, 0.345);
-    }
+/* Adj h1 and links font size and align links in 1 row center*/
     .mode h1{
         font-size: 3vw;
     }
@@ -624,7 +655,9 @@ textarea{
     .top p{
         display:inline-block;
     }
-/* ----------------- Team page queries ----------------*/
+/* --------- Team page adj --------- */
+
+/* Reduce team pictures size, adj padding and font size*/
     .picture img{
         width:60%;
     }
@@ -641,7 +674,9 @@ textarea{
     .pres h1{
         font-size: 3.5vw;
     }
-/* ----------------- Contact page queries ----------------*/
+/* --------- Contact page adj --------- */
+
+/* Adj contact form width, input height and H1 size*/
     form{
     grid-template-columns: 50%;
     }
@@ -656,6 +691,8 @@ textarea{
     }
 }
 @media screen and (min-width:1000px){
+
+/* Display products in 1 row, adj img and h1 sizes*/
     .products{
         grid-template-columns: repeat(4,20%);
         gap:3%;
@@ -669,6 +706,7 @@ textarea{
     .mode h1{
         font-size: 2.8vw;
     }
+/* Adj footer height and show content in one row starting with copyright*/
     footer{
         height:100px;
     }
@@ -688,14 +726,18 @@ textarea{
     .top{
         order:4;
     }
-/* ----------------- Team page queries ----------------*/
+/* --------- Team page adj --------- */
+
+/* Resize img and h1 */
     .picture img{
         width:50%;
     }
     .pres h1{
         font-size: 3vw;
     }
-/* ----------------- Contact page queries ----------------*/
+/* --------- Contact page adj --------- */
+
+/* Adj form width and text area height */
     form{
         grid-template-columns: 40%;
     }
@@ -707,19 +749,24 @@ textarea{
     }
 }
 @media screen and (min-width:1200px){
-/* ----------------- Home page queries ----------------*/
+
+/* --------- Home page adj --------- */
+
+/* Adj column width and spacing for products img*/
     .products{
         grid-template-columns: repeat(4,15%);
         gap:2%;
     }
+/* Reduce slideshow width*/
     .slideshow{
         width:70%;
-        height:500px;
     }
     .mode h1{
         font-size:2.5vw;
     }
-/* ----------------- Team page queries ----------------*/
+/* --------- Team page adj --------- */
+
+/* Target div.team to display content in 2 equal columns/center and adj padding */
     .team{
         padding-left:40px;
         padding-right:40px;
@@ -738,6 +785,7 @@ textarea{
         grid-column: 1/2;
         grid-row: 2/3;
     }
+/* Adj sizing > fonts & img */
     .intro{
         font-size: 19px;
         padding:20px;
@@ -751,10 +799,9 @@ textarea{
     .pres h1{
         font-size: 2.5vw;
     }
-/* ----------------- Contact page queries ----------------*/
-     textarea{
-         height: 150px;
-     }
+/* --------- Contact page adj --------- */
+
+/* Display content in 2 equal columns/center  and ajd font size and text area */
     .contact-info{
         display:grid;
         grid-template-columns: repeat(2,50%);
@@ -773,15 +820,20 @@ textarea{
         grid-column: 2/3;
         grid-row: 1/3;
         align-self:center;
-    }    
+    } 
+    textarea{
+        height: 150px;
+    }   
     .contact h1{
         font-size: 2.5vw;
     }
 }
 @media screen and (min-width:1500px){
-    /* ----------------- Home page queries ----------------*/
+
+/* ----------------- Home page queries ----------------*/
+
+/* Increase slideshow height and adj font sizes and padding*/
     .slideshow{
-        width:70%;
         height:600px;
     }
     .mode h1{
