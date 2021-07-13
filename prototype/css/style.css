@@ -1,4 +1,4 @@
-/* importing custom font */
+/* importing Raleway custom font */
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
@@ -130,7 +130,6 @@ nav a:hover{
     padding:25px 0px 80px 0px;
 }
 /* Target div.products to display elements vertically using flex*/ 
-
 .products{
     display:flex;
     flex-direction: column;
@@ -146,7 +145,6 @@ nav a:hover{
     box-shadow: 0px 10px 10px rgba(51, 49, 49, 0.4);
 }
 /* use soft animation to increase  the size of the cercle on hover */
-
 .products img:hover{
     animation: 1s pop linear;
 }
@@ -238,7 +236,6 @@ input[name="r"]{
     line-height: 1.9;
 }
 /* on hover change background to full color and change text color to green*/
-
 .mode li:hover{
     background-color: #351431;
 }
@@ -252,7 +249,6 @@ input[name="r"]{
     color: rgb(172, 252, 217);
 }
 /* Add a fix height to the footer and add background color*/
-
 footer{
     background-color: rgba(53, 20, 49, 0.71);
     color:white;

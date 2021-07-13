@@ -1,4 +1,4 @@
-# Animation source credit
+# Animation source/credit
 
 ## Slideshow animation used in Home page
 
